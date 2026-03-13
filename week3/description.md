@@ -1,1 +1,2 @@
-
+action="/search" => ths is the part which connect it to js. it defines the path at the end f which js is going to recieve the request.(i-e app.post("/search",...))
+method="POST"=>there are two types of methods to send request one shows the data it is usaully for general information and other is POST used for private information, it encrypt the information for security.
