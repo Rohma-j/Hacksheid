@@ -19,5 +19,5 @@ When SQL injection is done using the UNION operator through a URL parameter, the
 ### Screenshot Evidence:
 ![alt text](image-1.png)
 ### Recommended Fix: 
-const query = "SELECT * FROM users WHERE username = ? AND password = ?";
+const query = "SELECT * FROM users WHERE id = ?";
 Parameterized queries work by separating SQL code from user input, which is why they are so secure. Instead of directly inserting user data into the SQL statement, placeholders like ? are used in the query, and the actual values are sent separately. The database first prepares the query as a fixed template and treats all input values strictly as data, not as SQL commands. This prevents any malicious input from being executed as part of the query, because quotes, special characters, or logical statements are interpreted as plain text. In short, parameterized queries work by enforcing a clear boundary between code and data, making SQL injection attacks impossible and ensuring that user inputs can only affect the values, never the query structure.
