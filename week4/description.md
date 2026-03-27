@@ -1,0 +1,3 @@
+In week 4, we are going to analyze the app we updated in week 2. This app has two possible entry points where a user can interact with the backend. The first is the login form, where a user can enter a username and password. The second is through the URL, where a user can modify it to get a desired result.
+
+We will examine both entry points, identify potential threats, and write a report about them.
